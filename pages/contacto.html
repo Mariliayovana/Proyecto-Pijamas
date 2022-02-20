@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,100&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Contacto</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navegador">
+      <h1 class="logo"> Dulce Sueños</h1>
+      <ul class="nav__links">
+        <li class="nav__item">
+          <a class="nav__link" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../pages/productos.html">Produtos</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../pages/ofertas.html">Ofertas</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../pages/otros_productos.html">Otros Productos</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="../pages/contacto.html">Contactos</a>
+        </li>
+      </ul>
+      <input class="nav__input" type="text" name="" placeholder="Buscador">
+    </nav>
+  </header>
+  <main class="cards">
+    <img class="cards__imagen post4" src="../imagenes/familia-contacto.jpg" alt="pijamas-familia" width="450">
+    <h2 class="card__subTitulo">Contactos</h2>
+    <section>
+      <form class="formulario-grid" action="" method="">
+        <div class="formulario_uno">
+          <label class="formulario__label" for="nombre">Nombre:</label>
+          <input class="formulario__input" name="nombre" type="text" placeholder="Nombre" required>
+          <label class="formulario__label" for="apellido">Apellido:</label>
+          <input class="formulario__input" name="apellido" type="text" placeholder="Apellido" required>
+          <label class="formulario__label" for="correo">Correo electronico:</label>
+          <input class="formulario__input" name="correo" type="email" placeholder="nombre@ejemplo.com" required>
+          <label class="formulario__label" for="sexo">Sexo:</label>
+          <label for="sexo"><input type="radio" name="sexo" value="mujer" required>  Mujer </label>
+          <label for="sexo"> <input type="radio" name="sexo" value="hombre" required> Hombre </label>
+        </div>
+        <div class="formulario__dos">
+          <label class="formulario__label" for="mensajes">Mensajes</label>
+          <textarea class="formulario__texto" name="" id="" cols="15" rows="20" placeholder="Escriba un descripción"></textarea>
+          <label class="form__label" for="acepta"><input type="checkbox" name="acepta" value="1" required> Acepto la politica de la Empresa.</label>
+          <div>
+            <input class="formulario__enviar" type="reset" value="Limpiar">
+            <input class="formulario__enviar form__dos" type="submit" value="Enviar">
+          </div> 
+        </div>
+        
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav>
+      <ul class="footer__item">
+        <li class="footer__lista ">
+          <a class="footer__link" href="">
+            <img src="../imagenes/instagram.png" alt="instagram" />
+          </a>
+        </li>
+        <li class="footer__lista ">
+          <a class="footer__link" href="">
+            <img src="../imagenes/facebook.png" alt="facebook" />
+          </a>
+        </li>
+        <li class="footer__lista ">
+          <a class="footer__link" href="">
+            <img src="../imagenes/twitter.png" alt="twitter" />
+          </a>
+        </li>
+        <li class="footer__lista ">
+          <a class="footer__link" href="">
+            <img src="../imagenes/whatsapp.png" alt="whatsApp" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
+</html>

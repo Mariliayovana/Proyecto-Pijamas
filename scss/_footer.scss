@@ -12,3 +12,16 @@
   }
 }
 }
+//maps
+$redes: (
+  instagram: #C25E30,
+  facebook: #3a5795,
+  twitter: #55acee,
+  whatsApp: #44a304,
+);
+@each $red, $color in $redes {
+  &:hover.btn--#{$red} {
+    background-color: $color;
+    font-size: 2.5rem;
+  }
+}

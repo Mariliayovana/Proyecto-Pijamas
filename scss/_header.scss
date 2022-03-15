@@ -1,0 +1,9 @@
+//condicionales
+@if $modo == dark {
+  .navbar{
+    background-color: $dark_background;
+  }
+  .nav-link{
+    color: $dark_text;
+  }
+}

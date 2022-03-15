@@ -12,17 +12,15 @@ body{
   background:url("../imagenes/fondo\ .jpg");
 
   .card__video{
-    width: 100%;
+    width: map-get($enviar, ancho);
     height: 450px;
     padding: 20px 60px;
-    margin-top: 107px;
     
   }
   .cards__imagen{
-    width:100%;
-    margin-top: 60px;
+    width:map-get($enviar, ancho);
     height: 50vh;
-    padding: 60px 20px 0;
+    padding: 30px 20px 0;
   }
   .post4{
     object-fit: cover;
@@ -129,7 +127,7 @@ body{
     }
     .formulario__enviar{
       color: $oscuro;
-      width: map-get($enviar, ancho);
+      width: 20%;
       height: map-get($enviar, alto);
       border-radius: map-get($enviar, borde);
       margin-top: map-get($enviar, margen);
@@ -161,13 +159,12 @@ body{
 }
 @media screen and (max-width: 980px){
   .card__video{
-    width: 100%;
+    width: map-get($enviar, ancho);
     height: 240px;
-    margin-top: 124px;
     padding: 0px;
   }
   .cards__imagen{
-    width: 100%;
+    width: map-get($enviar, ancho);
     height: 80vh;
   }
   .card__subTitulo{
@@ -242,13 +239,12 @@ body{
 }
 @media screen and (max-width: 570px){
   .card__video{
-    width: 100%;
+    width: map-get($enviar, ancho);
     height: 240px;
-    margin-top: 124px;
     padding: 0px;
   }
   .cards__imagen{
-    width: 100%;
+    width: map-get($enviar, ancho);
     height: 25vh;
   }
   .card__subTitulo{
@@ -326,13 +322,12 @@ body{
 }
 @media screen and (max-width: 375px){
   .card__video{
-    width: 100%;
+    width: map-get($enviar, ancho);
     height: 229px;
-    margin-top: 104px;
     padding: 0px;
   }
   .cards__imagen{
-    width: 100%;
+    width: map-get($enviar, ancho);
     height: 230px;
   }
   .post4{
@@ -375,7 +370,7 @@ body{
       .formulario__input{
         flex-direction: column;
         font-size: 12px;
-        width: 100%;
+        width: map-get($enviar, ancho);
         height: 45px;
       }
       .formulario__label{
@@ -387,7 +382,7 @@ body{
       grid-area: contacto-dos;
       .formulario__texto {
         display:block;
-        width: 100%;
+        width: map-get($enviar, ancho);
         height: 138px;
         font-size: 14px;
       }

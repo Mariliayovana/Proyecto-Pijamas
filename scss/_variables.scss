@@ -1,11 +1,13 @@
-$modo: dark;
-$dark_background: #e773ca;
-$dark_text:#e9ecef;
-
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+//variables
 $blanco: #fff;
 $gris:  #ccc;
 $crema: rgb(204, 200, 200);
 $oscuro: rgb(99, 101, 104);
 
-$header_alto: 100px;
+
+

@@ -49,13 +49,9 @@ body{
       display:flex;
       flex-direction: column;
       background-color: $gris;
-      height: 400px;
-      width: 300px;
+      @include sizes(300px, 400px);
       border: 2px solid $gris;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      padding: 24px;
-      transition: all 2s;
+      @extend .tamaños;
 
       img{
         height: 300px;
@@ -117,7 +113,7 @@ body{
     .formulario__input{
       width: 68%;
       height: 55px;
-      border-radius: 10px;
+      border-radius: map-get($enviar, borde);
       font-size: 20px;
       padding: 10px;
     
@@ -129,20 +125,15 @@ body{
 
     .formulario__texto {
       display:block;
-      width: 89%;
-      height: 198px;
-      margin: 5px 0px 20px;
-      padding: 10px;
-      border-radius: 10px;
-      font-size: 18px;
+      @extend .texto;
     }
     .formulario__enviar{
       color: $oscuro;
-      width: 20%;
-      height: 55px;
-      border-radius: 10px;
-      margin-top: 30px;
-      font-size: 20px;
+      width: map-get($enviar, ancho);
+      height: map-get($enviar, alto);
+      border-radius: map-get($enviar, borde);
+      margin-top: map-get($enviar, margen);
+      font-size: map-get($enviar, fuente);
     
     }
     .form__dos{
@@ -158,7 +149,7 @@ body{
   .cards__imagen{
     height: 35vh;
   }
-  .card{
+  .cards .card{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
@@ -182,14 +173,13 @@ body{
   .card__subTitulo{
     font-size: 35px;
   }
-  .card{
+  .cards .card{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 10px;
     column-gap: 10px;
     .card__uno{
-      width: 100%;
-      height: 322px;
+      @include sizes(100%, 322px);
       img{
         width: 80%;
         margin-top:0px;
@@ -264,15 +254,14 @@ body{
   .card__subTitulo{
     font-size: 35px;
   }
-  .card{
+  .cards .card{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
     column-gap: 10px;
 
     .card__uno{
-      width: 100%;
-      height: 322px;
+      @include sizes(100%, 322px);
       img{
         width: 80%;
         margin-top:0px;
@@ -352,14 +341,13 @@ body{
   .card__subTitulo{
     font-size: 25px;
   }
-  .card{
+  .cards .card{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 10px;
     column-gap: 10px;
     .card__uno{
-      width: 100%;
-      height: 319px;
+      @include sizes(100%, 319px);
       img{
         width: 80%;
         margin-top:0px

@@ -64,6 +64,10 @@ body {
   height: 450px;
   padding: 20px 60px; }
 
+.cards .card__imagen {
+  object-fit: cover;
+  width: 100%; }
+
 .cards .card__subTitulo {
   text-align: center;
   color: #807e7e;

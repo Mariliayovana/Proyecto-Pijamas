@@ -22,6 +22,7 @@ $redes: (
 @each $red, $color in $redes {
   &:hover.btn--#{$red} {
     background-color: $color;
-    font-size: 2.5rem;
+    font-size: 4.5rem;
+    border-radius: 5px;
   }
 }

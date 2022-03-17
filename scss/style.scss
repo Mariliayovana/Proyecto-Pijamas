@@ -6,10 +6,11 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  font-size: 17px
+  font-size: 17px; 
+  background:url("../imagenes/fondo.jpg");
 }  
 .cards{
-  background:url("../imagenes/fondo\ .jpg");
+  
 
   .card__video{
     width: map-get($enviar, ancho);
@@ -50,7 +51,8 @@ body{
       @include sizes(300px, 400px);
       border: 2px solid $gris;
       @extend .tamaños;
-
+      box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.16);
+    
       img{
         height: 300px;
         object-fit: contain;

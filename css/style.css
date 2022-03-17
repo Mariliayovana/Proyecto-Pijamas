@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body{
+  background:url("../imagenes/fondo.jpg");
   font-family: 'Roboto', sans-serif;
   font-size: 17px;
 }
@@ -56,9 +57,7 @@ body{
 
 }
 /* MAIN */
-.cards{
-  background:url("../imagenes/fondo\ .jpg");
-}
+
 .cards__imagen{
   width:100%;
   margin-top: 60px;
@@ -113,14 +112,14 @@ body{
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 24px;
-  transition: all 2s;
+  transition: all .5s;
 }
 .card__uno img{
   height: 300px;
   object-fit: contain;  
 }
 .card__scale:hover{
-  transform: scale(1.5);
+  transform: scale(0.5);
   
 }
 .card__parrafo{

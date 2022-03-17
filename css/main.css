@@ -8,7 +8,7 @@
   border-radius: 10px;
   margin-bottom: 20px;
   padding: 24px;
-  transition: all 2s; }
+  transition: all .5s; }
 
 .texto, .formulario-grid .formulario__dos .formulario__texto {
   width: 89%;
@@ -36,79 +36,88 @@
 
 :hover.btn--instagram {
   background-color: #C25E30;
-  font-size: 2.5rem; }
+  font-size: 4.5rem;
+  border-radius: 5px; }
 
 :hover.btn--facebook {
   background-color: #3a5795;
-  font-size: 2.5rem; }
+  font-size: 4.5rem;
+  border-radius: 5px; }
 
 :hover.btn--twitter {
   background-color: #55acee;
-  font-size: 2.5rem; }
+  font-size: 4.5rem;
+  border-radius: 5px; }
 
 :hover.btn--whatsApp {
   background-color: #44a304;
-  font-size: 2.5rem; }
+  font-size: 4.5rem;
+  border-radius: 5px; }
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 17px; }
+  font-size: 17px;
+  background: url("../imagenes/fondo.jpg"); }
 
-.cards {
-  background: url("../imagenes/fondo .jpg"); }
-  .cards .card__video {
-    width: 100%;
-    height: 450px;
-    padding: 20px 60px; }
-  .cards .cards__imagen {
-    width: 100%;
-    height: 50vh;
-    padding: 30px 20px 0; }
-  .cards .post4 {
-    object-fit: cover;
-    object-position: -25px -24px; }
-  .cards .post3 {
-    object-fit: cover;
-    object-position: 0px 5px; }
-  .cards .card__subTitulo {
-    text-align: center;
-    color: #807e7e;
-    font-size: 50px;
-    margin: 20px 0px 20px 0px; }
-  .cards .card {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 10px;
-    column-gap: 10px;
-    justify-items: center; }
-    .cards .card .card__uno {
-      display: flex;
-      flex-direction: column;
-      background-color: #ccc;
-      width: 300px;
-      height: 400px;
-      border: 2px solid #ccc; }
-      .cards .card .card__uno img {
-        height: 300px;
-        object-fit: contain; }
-        .cards .card .card__uno img .post1 {
-          object-fit: cover;
-          object-position: 0px -26px; }
-        .cards .card .card__uno img .post2 {
-          object-fit: fill;
-          object-position: 0px 5px; }
-        .cards .card .card__uno img .post3 {
-          object-fit: cover;
-          object-position: 0px 5px; }
-        .cards .card .card__uno img .post4 {
-          object-fit: cover;
-          object-position: -25px -24px; }
-      .cards .card .card__uno .card__parrafo {
-        color: #636568;
-        text-align: center;
-        margin-top: 20px; }
-    .cards .card .card__scale:hover {
-      transform: scale(1.5); }
+.cards .card__video {
+  width: 100%;
+  height: 450px;
+  padding: 20px 60px; }
+
+.cards .cards__imagen {
+  width: 100%;
+  height: 50vh;
+  padding: 30px 20px 0; }
+
+.cards .post4 {
+  object-fit: cover;
+  object-position: -25px -24px; }
+
+.cards .post3 {
+  object-fit: cover;
+  object-position: 0px 5px; }
+
+.cards .card__subTitulo {
+  text-align: center;
+  color: #807e7e;
+  font-size: 50px;
+  margin: 20px 0px 20px 0px; }
+
+.cards .card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 10px;
+  column-gap: 10px;
+  justify-items: center; }
+  .cards .card .card__uno {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    width: 300px;
+    height: 400px;
+    border: 2px solid #ccc;
+    box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.16); }
+    .cards .card .card__uno img {
+      height: 300px;
+      object-fit: contain; }
+      .cards .card .card__uno img .post1 {
+        object-fit: cover;
+        object-position: 0px -26px; }
+      .cards .card .card__uno img .post2 {
+        object-fit: fill;
+        object-position: 0px 5px; }
+      .cards .card .card__uno img .post3 {
+        object-fit: cover;
+        object-position: 0px 5px; }
+      .cards .card .card__uno img .post4 {
+        object-fit: cover;
+        object-position: -25px -24px; }
+    .cards .card .card__uno .card__parrafo {
+      color: #636568;
+      text-align: center;
+      margin-top: 20px; }
+  .cards .card .card__scale:hover {
+    transform: scale(1.5); }
 
 .formulario-grid {
   background-color: #f8c2cb;

@@ -3,33 +3,17 @@
 @import "_header";
 @import "_footer";
 
-
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 17px; 
   background:url("../imagenes/fondo.jpg");
 }  
 .cards{
-  
-
   .card__video{
     width: map-get($enviar, ancho);
     height: 450px;
     padding: 20px 60px;
     
-  }
-  .cards__imagen{
-    width:map-get($enviar, ancho);
-    height: 50vh;
-    padding: 30px 20px 0;
-  }
-  .post4{
-    object-fit: cover;
-    object-position: -25px -24px;
-  }
-  .post3{
-    object-fit: cover;
-    object-position: 0px 5px;
   }
   .card__subTitulo{
     text-align: center;
@@ -47,11 +31,11 @@ body{
     .card__uno{
       display:flex;
       flex-direction: column;
+      box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.16);
+      border: 2px solid $gris;
       background-color: $gris;
       @include sizes(300px, 400px);
-      border: 2px solid $gris;
       @extend .tamaños;
-      box-shadow: 0px 7px 8px rgba(0, 0, 0, 0.16);
     
       img{
         height: 300px;
@@ -84,9 +68,9 @@ body{
       transform: scale(1.5);
       
     }
-  
   }
 }
+
 .formulario-grid{
   background-color:rgb(248, 194, 203);
   color: $oscuro;
@@ -142,13 +126,7 @@ body{
   }
 }
 
-
-
-
 @media screen and (max-width: 1440px){
-  .cards__imagen{
-    height: 35vh;
-  }
   .cards .card{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -159,15 +137,12 @@ body{
     height: 7vh;
   }  
 }
+
 @media screen and (max-width: 980px){
   .card__video{
     width: map-get($enviar, ancho);
     height: 240px;
     padding: 0px;
-  }
-  .cards__imagen{
-    width: map-get($enviar, ancho);
-    height: 80vh;
   }
   .card__subTitulo{
     font-size: 35px;
@@ -239,16 +214,14 @@ body{
     height: 7vh;
   }
 }
+
 @media screen and (max-width: 570px){
   .card__video{
     width: map-get($enviar, ancho);
     height: 240px;
     padding: 0px;
   }
-  .cards__imagen{
-    width: map-get($enviar, ancho);
-    height: 25vh;
-  }
+  
   .card__subTitulo{
     font-size: 35px;
   }
@@ -322,15 +295,12 @@ body{
     height: 7vh;
   }
 }
+
 @media screen and (max-width: 375px){
   .card__video{
     width: map-get($enviar, ancho);
     height: 229px;
     padding: 0px;
-  }
-  .cards__imagen{
-    width: map-get($enviar, ancho);
-    height: 230px;
   }
   .post4{
     object-position: initial;

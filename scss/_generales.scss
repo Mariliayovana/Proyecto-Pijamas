@@ -8,6 +8,7 @@ $dark_text:#e9ecef;
   width: $width;
   height: $height;
 }
+
 //extend
 .tamaños{
   border-radius: 10px;
@@ -23,8 +24,8 @@ $dark_text:#e9ecef;
   border-radius: 10px;
   font-size: 18px;
 }
-//map-get
 
+//map-get
 $enviar: (
   ancho: 100%,
   alto: 55px,
